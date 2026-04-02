@@ -64,7 +64,7 @@ export default function App() {
             <input
               type="text"
               className="block w-full pl-10 sm:pl-12 pr-4 py-2.5 sm:py-3 border border-white/10 rounded-xl leading-5 bg-white/5 text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-green-500/50 focus:border-green-500/50 focus:bg-white/10 transition-all text-sm sm:text-base shadow-lg shadow-black/20"
-              placeholder="搜索 DApp、DeFi、NFT..."
+              placeholder="search SUI DApp、DeFi..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -151,7 +151,7 @@ export default function App() {
                               onClick={() => toggleCategory(category)}
                               className="sm:hidden text-xs text-slate-500 hover:text-green-400 flex items-center gap-1 transition-colors"
                             >
-                              {expandedCategories[category] ? '收起' : '更多'}
+                              {expandedCategories[category] ? 'Less' : 'More'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
                             </button>
                           )}
@@ -161,7 +161,7 @@ export default function App() {
                               onClick={() => toggleCategory(category)}
                               className="hidden sm:flex lg:hidden text-xs text-slate-500 hover:text-green-400 items-center gap-1 transition-colors"
                             >
-                              {expandedCategories[category] ? '收起' : '更多'}
+                              {expandedCategories[category] ? 'Less' : 'More'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
                             </button>
                           )}
@@ -171,7 +171,7 @@ export default function App() {
                               onClick={() => toggleCategory(category)}
                               className="hidden lg:flex text-xs text-slate-500 hover:text-green-400 items-center gap-1 transition-colors"
                             >
-                              {expandedCategories[category] ? '收起' : '更多'}
+                              {expandedCategories[category] ? 'Less' : 'More'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
                             </button>
                           )}
