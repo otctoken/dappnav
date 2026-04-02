@@ -1,4 +1,4 @@
-export type Category = 'DeFi' | 'NFT' | 'Meme' | 'Gaming' | 'Social' | 'Infrastructure';
+export type Category = 'DEX' |'DeFi'| 'NFT' | 'Meme' | 'Gaming' | 'Social' | 'Infrastructure';
 
 export interface Project {
   id: string;
@@ -9,14 +9,17 @@ export interface Project {
   hot?: boolean;
 }
 
-export const categories: Category[] = ['DeFi', 'NFT', 'Meme', 'Gaming', 'Social', 'Infrastructure'];
+export const categories: Category[] = ['DEX','DeFi', 'NFT', 'Meme', 'Gaming', 'Social', 'Infrastructure'];
 
 export const projects: Project[] = [
+  //DEX
+  { id: '0-1', name: 'Cetus', description: 'DEX', url: 'https://cetus.zone', category: 'DEX'},
+  { id: '0-2', name: 'Turbos', description: 'DEX', url: 'https://turbos.finance', category: 'DEX' },
+  { id: '0-3', name: 'bluefin', description: 'DEX', url: 'https://trade.bluefin.io/swap/USDC-SUI', category: 'DEX', hot: true  },
+  
   // DeFi
   { id: '1', name: 'Scallop', description: 'Next Gen Money Market', url: 'https://scallop.io', category: 'DeFi', hot: true },
-  { id: '2', name: 'Navi Protocol', description: 'Liquidity Protocol', url: 'https://naviprotocol.io', category: 'DeFi', hot: true },
-  { id: '3', name: 'Cetus', description: 'DEX & Liquidity', url: 'https://cetus.zone', category: 'DeFi', hot: true },
-  { id: '4', name: 'Turbos', description: 'Decentralized exchange', url: 'https://turbos.finance', category: 'DeFi' },
+  { id: '2', name: 'Navi', description: 'Liquidity Protocol', url: 'https://naviprotocol.io', category: 'DeFi', hot: true },
   { id: '5', name: 'Suilend', description: 'Lending protocol', url: 'https://suilend.fi', category: 'DeFi' },
   { id: '11', name: 'Aftermath', description: 'All-in-one DeFi', url: 'https://aftermath.finance', category: 'DeFi' },
   { id: '12', name: 'KriyaDEX', description: 'Institutional DEX', url: 'https://kriya.finance', category: 'DeFi' },
@@ -51,9 +54,9 @@ export const projects: Project[] = [
   { id: '29', name: 'Releap', description: 'Decentralized Social', url: 'https://releap.xyz', category: 'Social' },
 
   // Infrastructure
-  { id: '14', name: 'Sui Vision', description: 'Blockchain explorer', url: 'https://suivision.xyz', category: 'Infrastructure', hot: true },
-  { id: '15', name: 'Suiscan', description: 'Analytics and explorer', url: 'https://suiscan.xyz', category: 'Infrastructure' },
-  { id: '30', name: 'Shinami', description: 'API & Node Service', url: 'https://shinami.com', category: 'Infrastructure' },
-  { id: '31', name: 'BlockVision', description: 'Data Indexing', url: 'https://blockvision.org', category: 'Infrastructure' },
-  { id: '32', name: 'Pyth', description: 'Oracle Network', url: 'https://pyth.network', category: 'Infrastructure' }
+  { id: '14', name: 'Sui Vision', description: 'Blockchain explorer', url: 'https://suivision.xyz', category: 'tool', hot: true },
+  { id: '15', name: 'Suiscan', description: 'Analytics and explorer', url: 'https://suiscan.xyz', category: 'tool' },
+  { id: '30', name: 'Shinami', description: 'API & Node Service', url: 'https://shinami.com', category: 'tool' },
+  { id: '31', name: 'BlockVision', description: 'Data Indexing', url: 'https://blockvision.org', category: 'tool' },
+  { id: '32', name: 'Pyth', description: 'Oracle Network', url: 'https://pyth.network', category: 'tool' }
 ];
