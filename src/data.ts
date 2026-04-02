@@ -1,4 +1,4 @@
-export type Category = 'DEX' |'DeFi'| 'NFT' | 'Meme' | 'Gaming' | 'Social' | 'Infrastructure';
+export type Category = 'DEX' | 'DeFi' | 'NFT' | 'Meme' | 'Gaming' | 'Social' | 'Infrastructure';
 
 export interface Project {
   id: string;
@@ -9,14 +9,16 @@ export interface Project {
   hot?: boolean;
 }
 
-export const categories: Category[] = ['DEX','DeFi', 'NFT', 'Meme', 'Gaming', 'Social', 'Infrastructure'];
+export const categories: Category[] = ['DEX', 'DeFi', 'NFT', 'Meme', 'Gaming', 'Social', 'Infrastructure'];
 
 export const projects: Project[] = [
   //DEX
-  { id: '0-1', name: 'Cetus', description: 'DEX', url: 'https://cetus.zone', category: 'DEX'},
-  { id: '0-2', name: 'Turbos', description: 'DEX', url: 'https://turbos.finance', category: 'DEX' },
-  { id: '0-3', name: 'bluefin', description: 'DEX', url: 'https://trade.bluefin.io/swap/USDC-SUI', category: 'DEX', hot: true  },
-  
+  { id: '0-1', name: 'Cetus', description: 'DEX', url: 'https://cetus.zone', category: 'DEX' },
+  { id: '0-2', name: 'Bluefin', description: 'DEX', url: 'https://trade.bluefin.io/swap/USDC-SUI', category: 'DEX', hot: true },
+  { id: '0-3', name: 'DeepBook', description: 'DEX', url: 'https://www.deepbook.tech/', category: 'DEX' },
+  { id: '0-3', name: 'Momentum', description: 'DEX', url: 'https://app.mmt.finance/trade', category: 'DEX' },
+  { id: '0-300', name: 'Turbos', description: 'DEX', url: 'https://app.turbos.finance/#/trade', category: 'DEX' },
+
   // DeFi
   { id: '1', name: 'Scallop', description: 'Next Gen Money Market', url: 'https://scallop.io', category: 'DeFi', hot: true },
   { id: '2', name: 'Navi', description: 'Liquidity Protocol', url: 'https://naviprotocol.io', category: 'DeFi', hot: true },
@@ -27,7 +29,7 @@ export const projects: Project[] = [
   { id: '19', name: 'FlowX', description: 'Ecosystem DEX', url: 'https://flowx.finance', category: 'DeFi' },
   { id: '20', name: 'Typus', description: 'Option vaults', url: 'https://typus.finance', category: 'DeFi', hot: true },
   { id: '21', name: 'Bucket', description: 'CDP Protocol', url: 'https://bucketprotocol.io', category: 'DeFi' },
-  
+
   // NFT
   { id: '6', name: 'BlueMove', description: 'NFT marketplace', url: 'https://bluemove.net', category: 'NFT', hot: true },
   { id: '7', name: 'TradePort', description: 'NFT trading platform', url: 'https://tradeport.xyz', category: 'NFT' },
