@@ -151,7 +151,7 @@ export default function App() {
                               onClick={() => toggleCategory(category)}
                               className="sm:hidden text-xs text-slate-500 hover:text-green-400 flex items-center gap-1 transition-colors"
                             >
-                              {expandedCategories[category] ? '收起' : 'More'}
+                              {expandedCategories[category] ? 'Close' : 'More'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
                             </button>
                           )}
@@ -161,7 +161,7 @@ export default function App() {
                               onClick={() => toggleCategory(category)}
                               className="hidden sm:flex lg:hidden text-xs text-slate-500 hover:text-green-400 items-center gap-1 transition-colors"
                             >
-                              {expandedCategories[category] ? '收起' : 'More'}
+                              {expandedCategories[category] ? 'Close' : 'More'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
                             </button>
                           )}
@@ -171,7 +171,7 @@ export default function App() {
                               onClick={() => toggleCategory(category)}
                               className="hidden lg:flex text-xs text-slate-500 hover:text-green-400 items-center gap-1 transition-colors"
                             >
-                              {expandedCategories[category] ? '收起' : 'More'}
+                              {expandedCategories[category] ? 'Close' : 'More'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
                             </button>
                           )}
