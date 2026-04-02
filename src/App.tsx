@@ -44,7 +44,7 @@ export default function App() {
       </div>
 
       {/* Header - Logo and Search parallel and centered */}
-      <header className="relative z-50 pt-12 pb-8">
+      <header className="relative z-50 pt-6 pb-4">
         <div className="max-w-4xl mx-auto px-4 flex flex-row items-center justify-center gap-4 sm:gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2 text-[#0d83e2] font-bold text-2xl sm:text-3xl tracking-tight shrink-0">
@@ -64,7 +64,7 @@ export default function App() {
             <input
               type="text"
               className="block w-full pl-10 sm:pl-12 pr-4 py-2.5 sm:py-3 border border-white/10 rounded-xl leading-5 bg-white/5 text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-green-500/50 focus:border-green-500/50 focus:bg-white/10 transition-all text-sm sm:text-base shadow-lg shadow-black/20"
-              placeholder="search DApp、DeFi、NFT..."
+              placeholder="搜索 DApp、DeFi、NFT..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -84,7 +84,7 @@ export default function App() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-4 py-2 relative z-10 pb-20">
+      <main className="max-w-6xl mx-auto px-4 py-1 relative z-10 pb-10">
         {/* Main Directory Container */}
         <div className="bg-white/[0.02] border border-white/10 rounded-xl overflow-hidden backdrop-blur-sm">
           
@@ -103,24 +103,24 @@ export default function App() {
                 return (
                   <div 
                     key={category} 
-                    className={`flex flex-col md:flex-row p-4 hover:bg-white/[0.02] transition-colors ${
+                    className={`flex flex-col md:flex-row py-2.5 px-4 hover:bg-white/[0.02] transition-colors ${
                       index !== categories.length - 1 ? 'border-b border-white/5' : ''
                     }`}
                   >
                     {/* Category Name */}
-                    <div className="w-full md:w-24 shrink-0 flex items-center mb-3 md:mb-0">
+                    <div className="w-full md:w-24 shrink-0 flex items-center mb-2 md:mb-0">
                       <span className="text-[#0d83e2] font-bold text-sm tracking-widest flex items-center gap-2">
                         {category}
                       </span>
                     </div>
                     
-                    {/* Links Grid - Adaptive 1 row: 2 on mobile, 4 on tablet, 6 on desktop */}
-                    <div className="flex-1 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-y-4 gap-x-3">
+                    {/* Links Grid - Adaptive 1 row: 3 on mobile, 4 on tablet, 6 on desktop */}
+                    <div className="flex-1 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-y-2.5 gap-x-2 sm:gap-x-3">
                       {categoryProjects.map((project, idx) => {
                         // Logic to show exactly 1 row when collapsed
                         let visibilityClass = 'flex';
                         if (!isExpanded) {
-                          if (idx >= 2 && idx < 4) visibilityClass = 'hidden sm:flex';
+                          if (idx >= 3 && idx < 4) visibilityClass = 'hidden sm:flex';
                           else if (idx >= 4 && idx < 6) visibilityClass = 'hidden lg:flex';
                           else if (idx >= 6) visibilityClass = 'hidden';
                         }
@@ -131,10 +131,10 @@ export default function App() {
                             href={project.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`group items-start gap-1.5 text-slate-300 hover:text-green-300 text-sm transition-colors ${visibilityClass}`}
+                            className={`group items-start gap-1 sm:gap-1.5 text-slate-300 hover:text-green-300 text-xs sm:text-sm transition-colors ${visibilityClass}`}
                             title={project.description}
                           >
-                            {project.hot && <Flame className="w-3.5 h-3.5 text-orange-500 shrink-0 mt-0.5" />}
+                            {project.hot && <Flame className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-orange-500 shrink-0 mt-0.5" />}
                             <span className="break-words whitespace-normal leading-snug">{project.name}</span>
                           </a>
                         );
@@ -142,16 +142,16 @@ export default function App() {
                     </div>
 
                     {/* More Button - Far Right */}
-                    <div className="w-full md:w-16 shrink-0 flex justify-end items-start mt-3 md:mt-0 pl-2">
+                    <div className="w-full md:w-16 shrink-0 flex justify-end items-start mt-2 md:mt-0 pl-2">
                       {!searchQuery.trim() && (
                         <>
-                          {/* Mobile button (shows if > 2) */}
-                          {categoryProjects.length > 2 && (
+                          {/* Mobile button (shows if > 3) */}
+                          {categoryProjects.length > 3 && (
                             <button
                               onClick={() => toggleCategory(category)}
                               className="sm:hidden text-xs text-slate-500 hover:text-green-400 flex items-center gap-1 transition-colors"
                             >
-                              {expandedCategories[category] ? 'Close' : 'More'}
+                              {expandedCategories[category] ? '收起' : '更多'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
                             </button>
                           )}
@@ -161,7 +161,7 @@ export default function App() {
                               onClick={() => toggleCategory(category)}
                               className="hidden sm:flex lg:hidden text-xs text-slate-500 hover:text-green-400 items-center gap-1 transition-colors"
                             >
-                              {expandedCategories[category] ? 'Close' : 'More'}
+                              {expandedCategories[category] ? '收起' : '更多'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
                             </button>
                           )}
@@ -171,7 +171,7 @@ export default function App() {
                               onClick={() => toggleCategory(category)}
                               className="hidden lg:flex text-xs text-slate-500 hover:text-green-400 items-center gap-1 transition-colors"
                             >
-                              {expandedCategories[category] ? 'Close' : 'More'}
+                              {expandedCategories[category] ? '收起' : '更多'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
                             </button>
                           )}
@@ -187,7 +187,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="relative z-10 py-6 text-center text-slate-500 text-sm">
+      <footer className="relative z-10 py-4 text-center text-slate-500 text-sm">
         <p>©2026 All rights reserved</p>
       </footer>
     </div>
