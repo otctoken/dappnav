@@ -16,8 +16,8 @@ export default function App() {
   const filteredProjects = useMemo(() => {
     if (!searchQuery.trim()) return projects;
     const lowerQuery = searchQuery.toLowerCase();
-    return projects.filter(p => 
-      p.name.toLowerCase().includes(lowerQuery) || 
+    return projects.filter(p =>
+      p.name.toLowerCase().includes(lowerQuery) ||
       p.description.toLowerCase().includes(lowerQuery)
     );
   }, [searchQuery]);
@@ -48,14 +48,14 @@ export default function App() {
         <div className="max-w-4xl mx-auto px-4 flex flex-row items-center justify-center gap-4 sm:gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2 text-[#0d83e2] font-bold text-2xl sm:text-3xl tracking-tight shrink-0">
-            <img 
-              src="/logo.png" 
-              alt="SuiNav Logo" 
+            <img
+              src="/logo.png"
+              alt="SuiNav Logo"
               className="w-8 h-8 sm:w-10 sm:h-10 object-contain rounded-full bg-white/5"
             />
             <span>SuiNav</span>
           </div>
-          
+
           {/* Search Bar */}
           <div className="w-full max-w-md relative group">
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -64,7 +64,7 @@ export default function App() {
             <input
               type="text"
               className="block w-full pl-10 sm:pl-12 pr-4 py-2.5 sm:py-3 border border-white/10 rounded-xl leading-5 bg-white/5 text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-green-500/50 focus:border-green-500/50 focus:bg-white/10 transition-all text-sm sm:text-base shadow-lg shadow-black/20"
-              placeholder="search SUI DApp、DeFi..."
+              placeholder="搜索 DApp、DeFi、NFT..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -84,10 +84,10 @@ export default function App() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-4 py-1 relative z-10 pb-10">
+      <main className="max-w-6xl mx-auto px-2 sm:px-4 py-1 relative z-10 pb-10">
         {/* Main Directory Container */}
         <div className="bg-white/[0.02] border border-white/10 rounded-xl overflow-hidden backdrop-blur-sm">
-          
+
           {searchQuery && filteredProjects.length === 0 ? (
             <div className="text-center py-20">
               <p className="text-slate-500">未找到相关项目</p>
@@ -101,21 +101,20 @@ export default function App() {
                 const isExpanded = expandedCategories[category] || searchQuery.trim() !== '';
 
                 return (
-                  <div 
-                    key={category} 
-                    className={`flex flex-col md:flex-row py-2.5 px-4 hover:bg-white/[0.02] transition-colors ${
-                      index !== categories.length - 1 ? 'border-b border-white/5' : ''
-                    }`}
+                  <div
+                    key={category}
+                    className={`flex flex-col md:flex-row py-1.5 px-3 hover:bg-white/[0.02] transition-colors ${index !== categories.length - 1 ? 'border-b border-white/5' : ''
+                      }`}
                   >
                     {/* Category Name */}
-                    <div className="w-full md:w-24 shrink-0 flex items-center mb-2 md:mb-0">
-                      <span className="text-[#0d83e2] font-bold text-sm tracking-widest flex items-center gap-2">
+                    <div className="w-full md:w-24 shrink-0 flex items-center mb-1.5 md:mb-0">
+                      <span className="text-[#0d83e2] font-bold text-sm sm:text-base tracking-normal flex items-center gap-2">
                         {category}
                       </span>
                     </div>
-                    
+
                     {/* Links Grid - Adaptive 1 row: 3 on mobile, 4 on tablet, 6 on desktop */}
-                    <div className="flex-1 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-y-2.5 gap-x-2 sm:gap-x-3">
+                    <div className="flex-1 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-y-2 gap-x-1.5 sm:gap-x-2">
                       {categoryProjects.map((project, idx) => {
                         // Logic to show exactly 1 row when collapsed
                         let visibilityClass = 'flex';
@@ -131,10 +130,10 @@ export default function App() {
                             href={project.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`group items-start gap-1 sm:gap-1.5 text-slate-300 hover:text-green-300 text-xs sm:text-sm transition-colors ${visibilityClass}`}
+                            className={`group items-start gap-1 sm:gap-1.5 text-slate-300 hover:text-green-300 text-sm sm:text-base transition-colors ${visibilityClass}`}
                             title={project.description}
                           >
-                            {project.hot && <Flame className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-orange-500 shrink-0 mt-0.5" />}
+                            {project.hot && <Flame className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-orange-500 shrink-0 mt-0.5" />}
                             <span className="break-words whitespace-normal leading-snug">{project.name}</span>
                           </a>
                         );
@@ -142,7 +141,7 @@ export default function App() {
                     </div>
 
                     {/* More Button - Far Right */}
-                    <div className="w-full md:w-16 shrink-0 flex justify-end items-start mt-2 md:mt-0 pl-2">
+                    <div className="w-full md:w-16 shrink-0 flex justify-end items-start mt-1.5 md:mt-0 pl-1">
                       {!searchQuery.trim() && (
                         <>
                           {/* Mobile button (shows if > 3) */}
@@ -151,7 +150,7 @@ export default function App() {
                               onClick={() => toggleCategory(category)}
                               className="sm:hidden text-xs text-slate-500 hover:text-green-400 flex items-center gap-1 transition-colors"
                             >
-                              {expandedCategories[category] ? 'Less' : 'More'}
+                              {expandedCategories[category] ? '收起' : '更多'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
                             </button>
                           )}
@@ -161,7 +160,7 @@ export default function App() {
                               onClick={() => toggleCategory(category)}
                               className="hidden sm:flex lg:hidden text-xs text-slate-500 hover:text-green-400 items-center gap-1 transition-colors"
                             >
-                              {expandedCategories[category] ? 'Less' : 'More'}
+                              {expandedCategories[category] ? '收起' : '更多'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
                             </button>
                           )}
@@ -171,7 +170,7 @@ export default function App() {
                               onClick={() => toggleCategory(category)}
                               className="hidden lg:flex text-xs text-slate-500 hover:text-green-400 items-center gap-1 transition-colors"
                             >
-                              {expandedCategories[category] ? 'Less' : 'More'}
+                              {expandedCategories[category] ? '收起' : '更多'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
                             </button>
                           )}
