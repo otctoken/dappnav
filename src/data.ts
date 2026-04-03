@@ -27,7 +27,7 @@ export const categories = [
   "Privacy",//隐私
   "Launch",//启动平台
   "Stablecoin",//稳定币
-  "Bounty"//悬赏
+  "Hackathon"//悬赏
 
 ] as const;
 
@@ -147,8 +147,12 @@ export const projects: Project[] = [
   { id: '13-1', name: 'Sui', description: 'Official study materials', url: 'https://docs.sui.io/', category: 'Learn', hot: true },
 
   //DevTools 构建工具
-  { id: '2fb-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'DevTools' },
-  { id: '30', name: 'Shinami', description: 'Delight your users with zero gas fees', url: 'https://shinami.com', category: 'DevTools' },
+  { id: '14-1', name: 'Shinami', description: 'Delight your users with zero gas fees', url: 'https://shinami.com', category: 'DevTools' },
+  { id: '14-2', name: 'Chainide', description: 'online move ide', url: 'https://chainide.com/', category: 'DevTools' },
+  { id: '14-3', name: 'Revela', description: 'Decompile move bytecode', url: 'https://revela.verichains.io/', category: 'DevTools' },
+  { id: '14-4', name: 'Bitslab', description: 'online move ide', url: 'https://ide.bitslab.xyz/', category: 'DevTools' },
+  { id: '14-5', name: 'Suigpt', description: 'Sui move ai', url: 'https://suigpt.tools/', category: 'DevTools' },
+  { id: '14-6', name: 'Microsui', description: 'MicroSui is a Framework that brings full Sui Protocol functionality to virtually any microcontroller', url: 'https://www.microsui.com/', category: 'DevTools' },
   //API
   { id: '2dca-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'API' },
   //"Oracle",//预言机
@@ -165,7 +169,7 @@ export const projects: Project[] = [
   { id: '2f32-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'BTCfi' },
   //"Wallets",//钱包
   { id: '2qdz-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Wallets' },
-  //"Security",//安全审计
+  //"Security",//安全审计 +悬赏
   { id: '2lk-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Security' },
   //"Pay",//支付
   { id: '2-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Pay' },
@@ -175,6 +179,6 @@ export const projects: Project[] = [
   { id: '2fhj-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Launch' },
   //Stablecoin //稳定币
   { id: '2fhjwe-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Stablecoin' },
-  //"Bounty"//悬赏
-  { id: '2fhjwe-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Stablecoin' },
+  //"Hackathon"//黑客松
+  { id: '2fhjwe-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Hackathon' },
 ];
