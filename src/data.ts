@@ -9,11 +9,11 @@ export const categories = [
   'Meme',
   'Gaming',
   'Games',
+  'Explorer',   // 把之前代码里出现的 tool 也加上
   'Social', //社会社交
   'Identity', // 身份
   "Learn",//学习
   "DevTools",//构建工具
-  'Explorer',   // 把之前代码里出现的 tool 也加上
   "API",
   "Oracle",//预言机
   "AI", //AI
@@ -130,35 +130,35 @@ export const projects: Project[] = [
   { id: '15', name: 'Suiscan', description: 'Analytics and explorer', url: 'https://suiscan.xyz', category: 'Identity' },
   { id: '9', name: 'SuiNS', description: 'Sui Name Service', url: 'https://suins.io', category: 'Identity', hot: true },
   //Learn 学习
-  { id: '2ea-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Learn' },
+  { id: '2ea-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Learn' },
   //DevTools 构建工具
-  { id: '2fb-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'DevTools' },
+  { id: '2fb-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'DevTools' },
   //API
-  { id: '2dca-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'API' },
+  { id: '2dca-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'API' },
   //"Oracle",//预言机
-  { id: '2qas-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Oracle' },
+  { id: '2qas-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Oracle' },
   //"AI", //AI
-  { id: '2vf-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'AI' },
+  { id: '2vf-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'AI' },
   //"Infra",//基础设施
-  { id: '24g-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Infra' },
+  { id: '24g-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Infra' },
   //"Analytics",//分析
-  { id: '2bgh-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Analytics' },
+  { id: '2bgh-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Analytics' },
   //"Bridge",//桥接
-  { id: '2-fvc1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Bridge' },
+  { id: '2-fvc1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Bridge' },
   //"RWA",//rwa
-  { id: '2-aa1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'RWA' },
+  { id: '2-aa1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'RWA' },
   //"BTCFi",//sui上的BTC
-  { id: '2f32-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'BTCFi' },
+  { id: '2f32-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'BTCFi' },
   //"Wallets",//钱包
-  { id: '2qdz-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Wallets' },
+  { id: '2qdz-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Wallets' },
   //"Security",//安全审计
-  { id: '2lk-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Security' },
+  { id: '2lk-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Security' },
   //"Pay",//支付
-  { id: '2-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Pay' },
+  { id: '2-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Pay' },
   //"Privacy",//隐私
-  { id: '2-hy51', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Privacy' },
+  { id: '2-hy51', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Privacy' },
   //"Launch",//启动平台
-  { id: '2fhj-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Launch' },
+  { id: '2fhj-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Launch' },
   //Stablecoin //稳定币
-  { id: '2fhjwe-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Stablecoin' },
+  { id: '2fhjwe-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Stablecoin' },
 ];
