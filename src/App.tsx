@@ -148,7 +148,7 @@ export default function App() {
                           {categoryProjects.length > 3 && (
                             <button
                               onClick={() => toggleCategory(category)}
-                              className="sm:hidden text-xs text-slate-500 hover:text-green-400 flex items-center gap-1 transition-colors"
+                              className="sm:hidden text-xs text-blue-500 hover:text-green-400 flex items-center gap-1 transition-colors"
                             >
                               {expandedCategories[category] ? '收起' : '更多'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
@@ -158,7 +158,7 @@ export default function App() {
                           {categoryProjects.length > 4 && (
                             <button
                               onClick={() => toggleCategory(category)}
-                              className="hidden sm:flex lg:hidden text-xs text-slate-500 hover:text-green-400 items-center gap-1 transition-colors"
+                              className="hidden sm:flex lg:hidden text-xs text-blue-500 hover:text-green-400 items-center gap-1 transition-colors"
                             >
                               {expandedCategories[category] ? '收起' : '更多'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
@@ -168,7 +168,7 @@ export default function App() {
                           {categoryProjects.length > 6 && (
                             <button
                               onClick={() => toggleCategory(category)}
-                              className="hidden lg:flex text-xs text-slate-500 hover:text-green-400 items-center gap-1 transition-colors"
+                              className="hidden lg:flex text-xs text-blue-500 hover:text-green-400 items-center gap-1 transition-colors"
                             >
                               {expandedCategories[category] ? '收起' : '更多'}
                               <ChevronDown className={`w-3 h-3 transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} />
