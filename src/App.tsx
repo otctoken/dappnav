@@ -131,11 +131,17 @@ export default function App() {
                             href={project.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`group items-start gap-0 sm:gap-0 text-slate-300 hover:text-green-300 text-base sm:text-base transition-colors ${visibilityClass}`}
-                            title={project.description}
+                            className={`group relative flex items-start gap-0 sm:gap-0 text-slate-300 hover:text-green-300 text-base sm:text-base transition-colors ${visibilityClass}`}
                           >
                             <span className="break-words whitespace-normal leading-snug">{project.name}</span>
                             {project.hot && <span className="inline-block text-sm ml-0.5 align-baseline">🔥</span>}
+
+                            {/* Custom Tooltip (Immediate Hover) */}
+                            {project.description && (
+                              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 hidden group-hover:block w-max max-w-[200px] sm:max-w-xs bg-[#1a1a1a] text-slate-300 text-xs p-2 rounded-md shadow-xl z-[100] border border-white/10 pointer-events-none">
+                                {project.description}
+                              </div>
+                            )}
                           </a>
                         );
                       })}

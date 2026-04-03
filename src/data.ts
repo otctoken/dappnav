@@ -68,10 +68,11 @@ export const projects: Project[] = [
   { id: '2-1', name: 'Momentum', description: 'XSUI', url: 'https://app.mmt.finance/xsui', category: 'Stake' },
   //Yield
   { id: '3-1', name: 'Navi', description: 'Earn Yields in One Click', url: 'https://app.naviprotocol.io/earn', category: 'Yield' },
-  { id: '3-2', name: 'Ember', description: 'Manage your wealth onchain', url: 'https://ember.so/', category: 'Yield', hot: true },
+  { id: '3-2', name: 'Ember', description: 'Manage your wealth onchain', url: 'https://ember.so/', category: 'Yield' },
   { id: '3-3', name: 'Mole', description: 'leveraged yield farms and funds on Sui chain', url: 'https://app.mole.fi/savings', category: 'Yield' },
   { id: '3-4', name: 'KaiFinance', description: 'Single Asset Vaults', url: 'https://kai.finance/vaults', category: 'Yield' },
   { id: '3-5', name: 'Typus', description: 'Deposit to Optimize Crypto Return', url: 'https://typus.finance/yield/', category: 'Yield' },
+  { id: '1-5', name: 'current', description: 'alongside spot Margin — all powered by isolated lending markets', url: 'https://app.current.finance/market', category: 'Lend', hot: true },
   { id: '3-6', name: 'Alphafi', description: 'Yields', url: 'https://alphafi.xyz/strategies', category: 'Yield' },
   //Perps
   { id: '4-1', name: 'Bluefin', description: 'Leveraged contracts', url: 'https://trade.bluefin.io/pro/BTC-PERP', category: 'Perps', hot: true },
