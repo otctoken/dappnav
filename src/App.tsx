@@ -103,7 +103,8 @@ export default function App() {
                 return (
                   <div
                     key={category}
-                    className={`flex flex-col md:flex-row py-1.5 px-3 hover:bg-white/[0.02] transition-colors ${index !== categories.length - 1 ? 'border-b border-white/5' : ''
+                    className={`flex flex-col md:flex-row py-1.5 px-3 hover:bg-white/[0.04] transition-colors ${index % 2 === 0 ? 'bg-white/[0.015]' : 'bg-transparent'
+                      } ${index !== categories.length - 1 ? 'border-b border-white/5' : ''
                       }`}
                   >
                     {/* Category Name */}
