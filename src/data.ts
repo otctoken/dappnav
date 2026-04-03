@@ -150,7 +150,7 @@ export const projects: Project[] = [
   { id: '14-1', name: 'Shinami', description: 'Delight your users with zero gas fees', url: 'https://shinami.com', category: 'DevTools' },
   { id: '14-2', name: 'Chainide', description: 'online move ide', url: 'https://chainide.com/', category: 'DevTools' },
   { id: '14-3', name: 'Revela', description: 'Decompile move bytecode', url: 'https://revela.verichains.io/', category: 'DevTools' },
-  { id: '14-4', name: 'Bitslab', description: 'online move ide', url: 'https://ide.bitslab.xyz/', category: 'DevTools' },
+  { id: '14-4', name: 'Bitslab', description: 'online move ide', url: 'https://ide.bitslab.xyz/', category: 'DevTools', hot: true },
   { id: '14-5', name: 'Suigpt', description: 'Sui move ai', url: 'https://suigpt.tools/', category: 'DevTools' },
   { id: '14-6', name: 'Microsui', description: 'MicroSui is a Framework that brings full Sui Protocol functionality to virtually any microcontroller', url: 'https://www.microsui.com/', category: 'DevTools' },
   //API
