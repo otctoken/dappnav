@@ -114,7 +114,7 @@ export const projects: Project[] = [
   { id: '9-3', name: 'Pawtato', description: 'Pawtato game', url: 'https://land.pawtato.app/', category: 'Games' },
   { id: '9-4', name: 'Samurai', description: 'Samurai Shodown R is a Web3', url: 'https://mini.lumiwavelab.com/', category: 'Games' },
   { id: '9-5', name: 'Vendetta', description: 'A fully on-chain, multiplayer strategy game on Sui Network', url: 'https://vendettagame.xyz/', category: 'Games' },
-  { id: '9-6', name: 'PLAYTRON', description: 'tech & entertainment commentary', url: 'https://www.playtron.one/', category: 'Games' },
+  { id: '9-6', name: 'Savingsgame', description: 'Lossless Lottery', url: 'https://savingsgame.dappnav.org/', category: 'Games' },
   // Social 社会 社交
   { id: '10-1', name: 'Suiculture', description: 'Suiculture is a website', url: 'https://www.suiculture.com/', category: 'Social' },
   { id: '10-2', name: 'Giverep', description: 'The reputation and engagement must flow on Sui Network', url: 'https://giverep.com/', category: 'Social' },
