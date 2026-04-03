@@ -9,7 +9,7 @@ export const categories = [
   'Meme',
   'Gaming',
   'Games',
-  'Explorer',   // 把之前代码里出现的 tool 也加上
+  'Analytics',   // 分析 浏览器
   'Social', //社会社交
   'Identity', // 身份
   "Learn",//学习
@@ -18,17 +18,16 @@ export const categories = [
   "Oracle",//预言机
   "AI", //AI
   "Infra",//基础设施
-  "Analytics",//分析
   "Bridge",//桥接
   "RWA",//rwa
-  "BTCFi",//sui上的BTC
+  "BTCfi",//sui上的BTC
   "Wallets",//钱包
   "Security",//安全审计
   "Pay",//支付
   "Privacy",//隐私
   "Launch",//启动平台
-  "Stablecoin"//稳定币
-
+  "Stablecoin",//稳定币
+  "Bounty"//悬赏
 
 ] as const;
 
@@ -104,8 +103,8 @@ export const projects: Project[] = [
   { id: '7-6', name: 'Bonk', description: 'MORE THAN ORDINARY', url: 'https://bonkcoin.com/', category: 'Meme' },
   // Gaming
   { id: '8-1', name: 'Brag', description: 'The classic poker game BRAG', url: 'https://brag.dappnav.org/', category: 'Gaming' },
-  { id: '8-2', name: 'Suigar', description: 'gambling', url: 'https://suigar.com/', category: 'Gaming', hot: true },
-  { id: '8-3', name: 'Doubleup', description: 'On-chain gambling', url: 'https://www.doubleup.fun/', category: 'Gaming' },
+  { id: '8-2', name: 'Suigar', description: 'gambling', url: 'https://suigar.com/', category: 'Gaming' },
+  { id: '8-3', name: 'Doubleup', description: 'On-chain gambling', url: 'https://www.doubleup.fun/', category: 'Gaming', hot: true },
   { id: '8-4', name: 'WinX', description: 'WinX.io Originals', url: 'https://winx.io/', category: 'Gaming' },
   { id: '8-5', name: 'Aur', description: 'Mining', url: 'https://aur.supply/', category: 'Gaming' },
   { id: '8-6', name: 'Wata', description: 'WATA - Winner Always Takes All', url: 'https://wata.wal.app/', category: 'Gaming' },
@@ -117,22 +116,39 @@ export const projects: Project[] = [
   { id: '9-5', name: 'Vendetta', description: 'A fully on-chain, multiplayer strategy game on Sui Network', url: 'https://vendettagame.xyz/', category: 'Games' },
   { id: '9-6', name: 'PLAYTRON', description: 'tech & entertainment commentary', url: 'https://www.playtron.one/', category: 'Games' },
   // Social 社会 社交
-  { id: '28', name: 'Suia', description: 'POAP & Social', url: 'https://suia.io', category: 'Social' },
-  { id: '29', name: 'Releap', description: 'Decentralized Social', url: 'https://releap.xyz', category: 'Social' },
-  // Explorer 浏览器
-  { id: '30', name: 'Shinami', description: 'API & Node Service', url: 'https://shinami.com', category: 'Explorer' },
-  { id: '31', name: 'BlockVision', description: 'Data Indexing', url: 'https://blockvision.org', category: 'Explorer' },
-  { id: '32', name: 'Pyth', description: 'Oracle Network', url: 'https://pyth.network', category: 'Explorer' },
-  { id: '14', name: 'Sui Vision', description: 'Blockchain explorer', url: 'https://suivision.xyz', category: 'Explorer', hot: true },
-  { id: '15', name: 'Suiscan', description: 'Analytics and explorer', url: 'https://suiscan.xyz', category: 'Explorer' },
+  { id: '10-1', name: 'Suiculture', description: 'Suiculture is a website', url: 'https://www.suiculture.com/', category: 'Social' },
+  { id: '10-2', name: 'Giverep', description: 'The reputation and engagement must flow on Sui Network', url: 'https://giverep.com/', category: 'Social' },
+  { id: '10-3', name: 'Alkimi', description: 'Worlds first decentralised Ad platform', url: 'https://www.alkimi.org/', category: 'Social' },
+  { id: '10-4', name: 'Fantv', description: 'WATCH&EARN', url: 'https://fantv.world/', category: 'Social' },
+  { id: '10-6', name: 'Forums', description: 'Sui BBS', url: 'https://forums.sui.io/', category: 'Social', hot: true },
+  { id: '10-5', name: '6degrees', description: 'Powering word-of-mouth', url: 'https://www.6degrees.co/', category: 'Social' },
+  { id: '10-7', name: 'Chatiwal', description: 'Secure messaging with Seal', url: 'https://chatiwal.vercel.app/', category: 'Social' },
+  // Analytics 分析 浏览器
+  { id: '11-1', name: 'SuiVision', description: 'Blockchain explorer', url: 'https://suivision.xyz', category: 'Analytics' },
+  { id: '11-2', name: 'Suiscan', description: 'Analytics and explorer', url: 'https://suiscan.xyz', category: 'Analytics', hot: true },
+  { id: '11-3', name: 'UpgradeRadar', description: 'We track the UpgradeCap so you don t have to', url: 'https://radar.dappnav.org/', category: 'Analytics' },
+  { id: '11-4', name: 'Pawtato', description: 'pawtato fi', url: 'https://pawtato.app/', category: 'Analytics' },
+  { id: '11-5', name: 'Navi', description: 'Navi copilot', url: 'https://app.naviprotocol.io/copilot', category: 'Analytics' },
+  { id: '11-6', name: 'Dune', description: 'Sui integration with Dune', url: 'https://dune.com/chains/sui', category: 'Analytics' },
+  { id: '11-7', name: 'SuiExplorer', description: 'SuiExplorer', url: 'https://sui.scan.spaceandtime.io/', category: 'Analytics' },
   //Identity 身份
-  { id: '14', name: 'Sui Vision', description: 'Blockchain explorer', url: 'https://suivision.xyz', category: 'Identity', hot: true },
-  { id: '15', name: 'Suiscan', description: 'Analytics and explorer', url: 'https://suiscan.xyz', category: 'Identity' },
-  { id: '9', name: 'SuiNS', description: 'Sui Name Service', url: 'https://suins.io', category: 'Identity', hot: true },
+  { id: '12-5', name: 'Enoki', description: 'Welcome to Enoki', url: 'https://enoki.mystenlabs.com/', category: 'Identity' },
+  { id: '12-2', name: 'Suilink', description: 'Connect your identities across Sui', url: 'https://www.suilink.io/', category: 'Identity' },
+  { id: '12-3', name: 'Karrier', description: 'Building decentralized telecom solutions', url: 'https://www.karrier.one/', category: 'Identity' },
+  { id: '12-4', name: 'Zan', description: 'services for your Web3 endeavors', url: 'https://zan.top/', category: 'Identity' },
+  { id: '12-1', name: 'SuiNS', description: 'Sui Name Service', url: 'https://suins.io', category: 'Identity', hot: true },
+  { id: '12-6', name: 'Zklogin', description: 'Sui Zklogin', url: 'https://www.sui.io/zklogin', category: 'Identity' },
   //Learn 学习
-  { id: '2ea-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Learn' },
+  { id: '13-1', name: 'Movebook', description: 'Learn the move contract', url: 'https://move-book.com/', category: 'Learn' },
+  { id: '13-6', name: 'Forums', description: 'Sui BBS', url: 'https://forums.sui.io/', category: 'Learn' },
+  { id: '13-1', name: 'Risein', description: 'move on sui course', url: 'https://www.risein.com/courses/move-on-sui-course', category: 'Learn' },
+  { id: '13-1', name: 'Blockeden', description: 'sui typescript sdk', url: 'https://blockeden.xyz/docs/sui/sui-typescript-sdk/', category: 'Learn' },
+  { id: '13-1', name: 'Movefuns', description: 'Movefuns Dao', url: 'https://movefuns.org/', category: 'Learn' },
+  { id: '13-1', name: 'Sui', description: 'Official study materials', url: 'https://docs.sui.io/', category: 'Learn', hot: true },
+
   //DevTools 构建工具
   { id: '2fb-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'DevTools' },
+  { id: '30', name: 'Shinami', description: 'Delight your users with zero gas fees', url: 'https://shinami.com', category: 'DevTools' },
   //API
   { id: '2dca-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'API' },
   //"Oracle",//预言机
@@ -141,14 +157,12 @@ export const projects: Project[] = [
   { id: '2vf-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'AI' },
   //"Infra",//基础设施
   { id: '24g-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Infra' },
-  //"Analytics",//分析
-  { id: '2bgh-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Analytics' },
   //"Bridge",//桥接
   { id: '2-fvc1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Bridge' },
   //"RWA",//rwa
   { id: '2-aa1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'RWA' },
   //"BTCFi",//sui上的BTC
-  { id: '2f32-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'BTCFi' },
+  { id: '2f32-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'BTCfi' },
   //"Wallets",//钱包
   { id: '2qdz-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Wallets' },
   //"Security",//安全审计
@@ -160,5 +174,7 @@ export const projects: Project[] = [
   //"Launch",//启动平台
   { id: '2fhj-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Launch' },
   //Stablecoin //稳定币
+  { id: '2fhjwe-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Stablecoin' },
+  //"Bounty"//悬赏
   { id: '2fhjwe-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Stablecoin' },
 ];
