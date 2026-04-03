@@ -86,7 +86,7 @@ export default function App() {
       {/* Main Content */}
       <main className="max-w-6xl mx-auto px-2 sm:px-4 py-1 relative z-10 pb-10">
         {/* Main Directory Container */}
-        <div className="bg-white/[0.02] border border-white/10 rounded-xl overflow-hidden backdrop-blur-sm">
+        <div className="bg-white/[0.02] border border-white/10 rounded-xl backdrop-blur-sm">
 
           {searchQuery && filteredProjects.length === 0 ? (
             <div className="text-center py-20">
@@ -105,7 +105,7 @@ export default function App() {
                     key={category}
                     className={`flex flex-col md:flex-row py-1.5 px-3 hover:bg-white/[0.025] transition-colors ${index % 2 === 0 ? 'bg-white/[0.04]' : 'bg-transparent'
                       } ${index !== categories.length - 1 ? 'border-b border-white/5' : ''
-                      }`}
+                      } ${index === 0 ? 'rounded-t-xl' : ''} ${index === categories.length - 1 ? 'rounded-b-xl' : ''}`}
                   >
                     {/* Category Name */}
                     <div className="w-full md:w-24 shrink-0 flex items-center mb-1.5 md:mb-0">
@@ -131,7 +131,7 @@ export default function App() {
                             href={project.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`group relative flex items-start gap-0 sm:gap-0 text-slate-300 hover:text-green-300 text-base sm:text-base transition-colors ${visibilityClass}`}
+                            className={`group relative flex items-start gap-0 sm:gap-0 text-slate-300 hover:text-green-300 text-base sm:text-base transition-colors hover:z-50 ${visibilityClass}`}
                           >
                             <span className="break-words whitespace-normal leading-snug">{project.name}</span>
                             {project.hot && <span className="inline-block text-sm ml-0.5 align-baseline">🔥</span>}
