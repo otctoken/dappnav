@@ -114,7 +114,7 @@ export default function App() {
                     </div>
 
                     {/* Links Grid - Adaptive 1 row: 3 on mobile, 4 on tablet, 6 on desktop */}
-                    <div className="flex-1 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-y-2 gap-x-1.5 sm:gap-x-2">
+                    <div className="flex-1 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-y-1 sm:gap-y-2 gap-x-1.5 sm:gap-x-2">
                       {categoryProjects.map((project, idx) => {
                         // Logic to show exactly 1 row when collapsed
                         let visibilityClass = 'flex';
@@ -130,7 +130,7 @@ export default function App() {
                             href={project.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`group items-start gap-1 sm:gap-1.5 text-slate-300 hover:text-green-300 text-sm sm:text-base transition-colors ${visibilityClass}`}
+                            className={`group items-start gap-1 sm:gap-1.5 text-slate-300 hover:text-green-300 text-base sm:text-base transition-colors ${visibilityClass}`}
                             title={project.description}
                           >
                             {project.hot && <Flame className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-orange-500 shrink-0 mt-0.5" />}
