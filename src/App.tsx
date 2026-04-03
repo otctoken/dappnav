@@ -134,7 +134,7 @@ export default function App() {
                             title={project.description}
                           >
                             <span className="break-words whitespace-normal leading-snug">{project.name}</span>
-                            {project.hot && <Flame className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-orange-500 shrink-0 mt-0.5" />}
+                            {project.hot && <span className="inline-block text-sm ml-0.5 align-baseline">🔥</span>}
                           </a>
                         );
                       })}
