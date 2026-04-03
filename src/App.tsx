@@ -130,11 +130,11 @@ export default function App() {
                             href={project.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`group items-start gap-1 sm:gap-1.5 text-slate-300 hover:text-green-300 text-base sm:text-base transition-colors ${visibilityClass}`}
+                            className={`group items-start gap-0 sm:gap-0 text-slate-300 hover:text-green-300 text-base sm:text-base transition-colors ${visibilityClass}`}
                             title={project.description}
                           >
-                            {project.hot && <Flame className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-orange-500 shrink-0 mt-0.5" />}
                             <span className="break-words whitespace-normal leading-snug">{project.name}</span>
+                            {project.hot && <Flame className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-orange-500 shrink-0 mt-0.5" />}
                           </a>
                         );
                       })}
