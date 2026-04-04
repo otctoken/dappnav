@@ -15,7 +15,7 @@ export const categories = [
   "Learn",//学习
   "DevTools",//构建工具
   "API",
-  "Oracle",//预言机
+  //"Oracle",//预言机
   "AI", //AI
   "Infra",//基础设施
   "Bridge",//桥接
@@ -146,7 +146,6 @@ export const projects: Project[] = [
   { id: '13-1', name: 'Blockeden', description: 'sui typescript sdk', url: 'https://blockeden.xyz/docs/sui/sui-typescript-sdk/', category: 'Learn' },
   { id: '13-1', name: 'Movefuns', description: 'Movefuns Dao', url: 'https://movefuns.org/', category: 'Learn' },
   { id: '13-1', name: 'Sui', description: 'Official study materials', url: 'https://docs.sui.io/', category: 'Learn', hot: true },
-
   //DevTools 构建工具
   { id: '14-1', name: 'Shinami', description: 'Delight your users with zero gas fees', url: 'https://shinami.com', category: 'DevTools' },
   { id: '14-2', name: 'Chainide', description: 'online move ide', url: 'https://chainide.com/', category: 'DevTools' },
@@ -155,13 +154,29 @@ export const projects: Project[] = [
   { id: '14-5', name: 'Suigpt', description: 'Sui move ai', url: 'https://suigpt.tools/', category: 'DevTools' },
   { id: '14-6', name: 'Microsui', description: 'MicroSui is a Framework that brings full Sui Protocol functionality to virtually any microcontroller', url: 'https://www.microsui.com/', category: 'DevTools' },
   //API
-  { id: '2dca-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'API' },
-  //"Oracle",//预言机
-  { id: '2qas-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Oracle' },
+  { id: '15-1', name: 'Ankr', description: 'Trusted by the best in business and blockchain', url: 'https://www.ankr.com/docs/rpc-service/chains/chains-api/sui/', category: 'API' },
+  { id: '15-1', name: 'Blockberry', description: 'blockberry api', url: 'https://blockberry.one/', category: 'API' },
+  { id: '15-1', name: 'Quicknode', description: 'The only Sui provider youll ever need', url: 'https://www.quicknode.com/chains/sui', category: 'API' },
+  { id: '15-1', name: 'Blockpi', description: 'BlockPI gRPC API', url: 'https://blockpi.io/cn/chain/sui', category: 'API' },
+  { id: '15-1', name: 'Zan', description: 'the Fastest', url: 'https://zan.top/blockchain/sui', category: 'API' },
+  { id: '15-1', name: 'Chainstack', description: 'Get a low-latency RPC', url: 'https://chainstack.com/zh/build-better-with-sui/', category: 'API' },
   //"AI", //AI
-  { id: '2vf-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'AI' },
+  { id: '16-1', name: 'Beep', description: 'just beep', url: 'https://www.justbeep.it/', category: 'AI' },
+  { id: '16-1', name: 'Fantv', description: 'Your favourite AI Agent platform ', url: 'https://fantv.world/', category: 'AI' },
+  { id: '16-1', name: 'T2000', description: 'The engine behind', url: 'https://t2000.ai/', category: 'AI' },
+  { id: '16-5', name: 'Suigpt', description: 'Sui move ai', url: 'https://suigpt.tools/', category: 'AI' },
+  { id: '16-1', name: 'Suisentinel', description: 'Ship AI Agents Without Fear. Test Them Against Real Attacks.', url: 'https://www.suisentinel.xyz/', category: 'AI' },
+  { id: '16-1', name: 'DeAgentAI', description: 'Make AI smarter', url: 'https://link3.to/deagentai', category: 'AI' },
   //"Infra",//基础设施
-  { id: '24g-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Infra' },
+  { id: '17-1', name: 'Walrus', description: 'Decentralized storage', url: 'https://walrus.xyz/', category: 'Infra' },
+  { id: '17-2', name: 'Seal', description: 'Seal is a decentralized secrets management (DSM) service built for the next generation of Web3 applications', url: 'https://seal.mystenlabs.com/', category: 'Infra' },
+  { id: '17-3', name: 'Nautilus', description: 'Trusted offchain compute, verified onchain', url: 'https://www.sui.io/nautilus', category: 'Infra' },
+  { id: '17-4', name: 'DeepBook', description: 'SUI official order book', url: 'https://www.deepbook.tech/', category: 'Infra' },
+  { id: '17-5', name: 'SuiNs', description: 'Sui Name Service simplifies your on-chain life', url: 'https://suins.io/', category: 'Infra' },
+  { id: '17-6', name: 'Pyth', description: 'The Price of Everything Everywhere', url: 'https://www.pyth.network/', category: 'Infra' },
+  { id: '17-7', name: 'Switchboard', description: 'The Everything Oracle', url: 'https://switchboard.xyz/', category: 'Infra' },
+  { id: '17-8', name: 'Supra', description: 'The first fully onchain automation is here', url: 'https://supra.com/', category: 'Infra' },
+  { id: '17-9', name: 'Stork', description: 'Stork is the leading oracle for low-latency DeFi protocols', url: 'https://www.stork.network/', category: 'Infra' },
   //"Bridge",//桥接
   { id: '2-fvc1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Bridge' },
   //"RWA",//rwa
