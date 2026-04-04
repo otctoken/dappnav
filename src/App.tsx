@@ -64,7 +64,7 @@ export default function App() {
             <input
               type="text"
               className="block w-full pl-10 sm:pl-12 pr-4 py-2.5 sm:py-3 border border-white/10 rounded-xl leading-5 bg-white/5 text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-green-500/50 focus:border-green-500/50 focus:bg-white/10 transition-all text-sm sm:text-base shadow-lg shadow-black/20"
-              placeholder="Search SUI DApp、DeFi..."
+              placeholder="Search SuiNetwork DApp DeFi..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
