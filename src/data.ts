@@ -62,18 +62,18 @@ export const projects: Project[] = [
   //Stake
   { id: '2-1', name: 'Haedal', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Stake', hot: true },
   { id: '2-2', name: 'Volo', description: 'Stake your SUI to receive vSUI while staking', url: 'https://www.volosui.com/stake', category: 'Stake' },
-  { id: '2-1', name: 'Springsui', description: 'Discover rewards and DeFi opportunities with your sSUI', url: 'https://springsui.com/SUI-sSUI', category: 'Stake' },
-  { id: '2-1', name: 'Alphafi', description: 'Stake SUI', url: 'https://alphafi.xyz/stsui', category: 'Stake' },
-  { id: '2-1', name: 'Aftermath', description: 'Stake your SUI and earn rewards', url: 'https://aftermath.finance/stake?validator=aftermath', category: 'Stake' },
-  { id: '2-1', name: 'Momentum', description: 'XSUI', url: 'https://app.mmt.finance/xsui', category: 'Stake' },
+  { id: '2-3', name: 'Springsui', description: 'Discover rewards and DeFi opportunities with your sSUI', url: 'https://springsui.com/SUI-sSUI', category: 'Stake' },
+  { id: '2-4', name: 'Alphafi', description: 'Stake SUI', url: 'https://alphafi.xyz/stsui', category: 'Stake' },
+  { id: '2-5', name: 'Aftermath', description: 'Stake your SUI and earn rewards', url: 'https://aftermath.finance/stake?validator=aftermath', category: 'Stake' },
+  { id: '2-6', name: 'Momentum', description: 'XSUI', url: 'https://app.mmt.finance/xsui', category: 'Stake' },
   //Yield
   { id: '3-1', name: 'Navi', description: 'Earn Yields in One Click', url: 'https://app.naviprotocol.io/earn', category: 'Yield' },
   { id: '3-2', name: 'Ember', description: 'Manage your wealth onchain', url: 'https://ember.so/', category: 'Yield' },
   { id: '3-3', name: 'Mole', description: 'leveraged yield farms and funds on Sui chain', url: 'https://app.mole.fi/savings', category: 'Yield' },
   { id: '3-4', name: 'KaiFinance', description: 'Single Asset Vaults', url: 'https://kai.finance/vaults', category: 'Yield' },
   { id: '3-5', name: 'Typus', description: 'Deposit to Optimize Crypto Return', url: 'https://typus.finance/yield/', category: 'Yield' },
-  { id: '1-5', name: 'current', description: 'alongside spot Margin — all powered by isolated lending markets', url: 'https://app.current.finance/market', category: 'Lend', hot: true },
-  { id: '3-6', name: 'Alphafi', description: 'Yields', url: 'https://alphafi.xyz/strategies', category: 'Yield' },
+  { id: '3-6', name: 'current', description: 'alongside spot Margin — all powered by isolated lending markets', url: 'https://app.current.finance/market', category: 'Lend', hot: true },
+  { id: '3-7', name: 'Alphafi', description: 'Yields', url: 'https://alphafi.xyz/strategies', category: 'Yield' },
   //Perps
   { id: '4-1', name: 'Bluefin', description: 'Leveraged contracts', url: 'https://trade.bluefin.io/pro/BTC-PERP', category: 'Perps', hot: true },
   { id: '4-2', name: 'Typus', description: 'Leverage trading', url: 'https://typus.finance/perps/', category: 'Perps' },
@@ -141,11 +141,11 @@ export const projects: Project[] = [
   { id: '12-6', name: 'Zklogin', description: 'Sui Zklogin', url: 'https://www.sui.io/zklogin', category: 'Identity' },
   //Learn 学习
   { id: '13-1', name: 'Movebook', description: 'Learn the move contract', url: 'https://move-book.com/', category: 'Learn' },
-  { id: '13-6', name: 'Forums', description: 'Sui BBS', url: 'https://forums.sui.io/', category: 'Learn' },
-  { id: '13-1', name: 'Risein', description: 'move on sui course', url: 'https://www.risein.com/courses/move-on-sui-course', category: 'Learn' },
-  { id: '13-1', name: 'Blockeden', description: 'sui typescript sdk', url: 'https://blockeden.xyz/docs/sui/sui-typescript-sdk/', category: 'Learn' },
-  { id: '13-1', name: 'Movefuns', description: 'Movefuns Dao', url: 'https://movefuns.org/', category: 'Learn' },
-  { id: '13-1', name: 'Sui', description: 'Official study materials', url: 'https://docs.sui.io/', category: 'Learn', hot: true },
+  { id: '13-2', name: 'Forums', description: 'Sui BBS', url: 'https://forums.sui.io/', category: 'Learn' },
+  { id: '13-3', name: 'Risein', description: 'move on sui course', url: 'https://www.risein.com/courses/move-on-sui-course', category: 'Learn' },
+  { id: '13-4', name: 'Blockeden', description: 'sui typescript sdk', url: 'https://blockeden.xyz/docs/sui/sui-typescript-sdk/', category: 'Learn' },
+  { id: '13-5', name: 'Movefuns', description: 'Movefuns Dao', url: 'https://movefuns.org/', category: 'Learn' },
+  { id: '13-6', name: 'Sui', description: 'Official study materials', url: 'https://docs.sui.io/', category: 'Learn', hot: true },
   //DevTools 构建工具
   { id: '14-1', name: 'Shinami', description: 'Delight your users with zero gas fees', url: 'https://shinami.com', category: 'DevTools' },
   { id: '14-2', name: 'Chainide', description: 'online move ide', url: 'https://chainide.com/', category: 'DevTools' },
@@ -155,18 +155,18 @@ export const projects: Project[] = [
   { id: '14-6', name: 'Microsui', description: 'MicroSui is a Framework that brings full Sui Protocol functionality to virtually any microcontroller', url: 'https://www.microsui.com/', category: 'DevTools' },
   //API
   { id: '15-1', name: 'Ankr', description: 'Trusted by the best in business and blockchain', url: 'https://www.ankr.com/docs/rpc-service/chains/chains-api/sui/', category: 'API' },
-  { id: '15-1', name: 'Blockberry', description: 'blockberry api', url: 'https://blockberry.one/', category: 'API' },
-  { id: '15-1', name: 'Quicknode', description: 'The only Sui provider youll ever need', url: 'https://www.quicknode.com/chains/sui', category: 'API' },
-  { id: '15-1', name: 'Blockpi', description: 'BlockPI gRPC API', url: 'https://blockpi.io/cn/chain/sui', category: 'API' },
-  { id: '15-1', name: 'Zan', description: 'the Fastest', url: 'https://zan.top/blockchain/sui', category: 'API' },
-  { id: '15-1', name: 'Chainstack', description: 'Get a low-latency RPC', url: 'https://chainstack.com/zh/build-better-with-sui/', category: 'API' },
+  { id: '15-2', name: 'Blockberry', description: 'blockberry api', url: 'https://blockberry.one/', category: 'API' },
+  { id: '15-3', name: 'Quicknode', description: 'The only Sui provider youll ever need', url: 'https://www.quicknode.com/chains/sui', category: 'API' },
+  { id: '15-4', name: 'Blockpi', description: 'BlockPI gRPC API', url: 'https://blockpi.io/cn/chain/sui', category: 'API' },
+  { id: '15-5', name: 'Zan', description: 'the Fastest', url: 'https://zan.top/blockchain/sui', category: 'API' },
+  { id: '15-6', name: 'Chainstack', description: 'Get a low-latency RPC', url: 'https://chainstack.com/zh/build-better-with-sui/', category: 'API' },
   //"AI", //AI
   { id: '16-1', name: 'Beep', description: 'just beep', url: 'https://www.justbeep.it/', category: 'AI' },
-  { id: '16-1', name: 'Fantv', description: 'Your favourite AI Agent platform ', url: 'https://fantv.world/', category: 'AI' },
-  { id: '16-1', name: 'T2000', description: 'The engine behind', url: 'https://t2000.ai/', category: 'AI' },
-  { id: '16-5', name: 'Suigpt', description: 'Sui move ai', url: 'https://suigpt.tools/', category: 'AI' },
-  { id: '16-1', name: 'Suisentinel', description: 'Ship AI Agents Without Fear. Test Them Against Real Attacks.', url: 'https://www.suisentinel.xyz/', category: 'AI' },
-  { id: '16-1', name: 'DeAgentAI', description: 'Make AI smarter', url: 'https://link3.to/deagentai', category: 'AI' },
+  { id: '16-2', name: 'Fantv', description: 'Your favourite AI Agent platform ', url: 'https://fantv.world/', category: 'AI' },
+  { id: '16-3', name: 'T2000', description: 'The engine behind', url: 'https://t2000.ai/', category: 'AI' },
+  { id: '16-4', name: 'Suigpt', description: 'Sui move ai', url: 'https://suigpt.tools/', category: 'AI' },
+  { id: '16-5', name: 'Suisentinel', description: 'Ship AI Agents Without Fear. Test Them Against Real Attacks.', url: 'https://www.suisentinel.xyz/', category: 'AI' },
+  { id: '16-6', name: 'DeAgentAI', description: 'Make AI smarter', url: 'https://link3.to/deagentai', category: 'AI' },
   //"Infra",//基础设施
   { id: '17-1', name: 'Walrus', description: 'Decentralized storage', url: 'https://walrus.xyz/', category: 'Infra' },
   { id: '17-2', name: 'Seal', description: 'Seal is a decentralized secrets management (DSM) service built for the next generation of Web3 applications', url: 'https://seal.mystenlabs.com/', category: 'Infra' },
@@ -188,13 +188,13 @@ export const projects: Project[] = [
   //"Security",//安全审计 +悬赏
   { id: '2lk-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Security' },
   //"Pay",//支付
-  { id: '2-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Pay' },
+  { id: '2112-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Pay' },
   //"Privacy",//隐私
-  { id: '2-hy51', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Privacy' },
+  { id: '2-hy1151', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Privacy' },
   //"Launch",//启动平台
-  { id: '2fhj-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Launch' },
+  { id: '2fh1j-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Launch' },
   //Stablecoin //稳定币
-  { id: '2fhjwe-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Stablecoin' },
+  { id: '2fh11jwe-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Stablecoin' },
   //"Hackathon"//黑客松
   { id: '2fhjwe-1', name: 'Collecting..', description: 'Stake SUI、WAL', url: 'https://www.haedal.xyz/stake', category: 'Hackathon' },
 ];
